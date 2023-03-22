@@ -2,6 +2,13 @@
 
 import React from "react";
 import ReactDOM from "react-dom/client";
+import App, { msg } from "./App";
+
+console.log(msg);
+
+// "./" means some level
+// "../" means one level up
+// "/componentName" one level down
 
 // 2) Get a reference to the dix with ID root
 const el = document.getElementById("root");
@@ -10,25 +17,6 @@ const el = document.getElementById("root");
 const root = ReactDOM.createRoot(el);
 
 // 4) Create a componet
-function App() {
-  // let msg = "Hello there!!";
-
-  // if (Math.random() > 0.5) {
-  //   msg = "Bye bye";
-  // }
-  // const date = new Date();
-  // const currentDate = new Date().toLocaleDateString();
-  const name = "Tutu";
-  const age = 29;
-
-  return (
-    <h1>
-      {/* {currentDate} */}
-      Hi this is {name} and {name} is {age} years old.
-      <h2>hahahah</h2>
-    </h1>
-  );
-}
-
+// the code has been moved to App.js
 // 5) Show the component on the screen
 root.render(<App />);
