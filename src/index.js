@@ -11,7 +11,23 @@ const root = ReactDOM.createRoot(el);
 
 // 4) Create a componet
 function App() {
-  return <h1>Hi there!</h1>;
+  // let msg = "Hello there!!";
+
+  // if (Math.random() > 0.5) {
+  //   msg = "Bye bye";
+  // }
+  // const date = new Date();
+  // const currentDate = new Date().toLocaleDateString();
+  const name = "Tutu";
+  const age = 29;
+
+  return (
+    <h1>
+      {/* {currentDate} */}
+      Hi this is {name} and {name} is {age} years old.
+      <h2>hahahah</h2>
+    </h1>
+  );
 }
 
 // 5) Show the component on the screen
