@@ -4,6 +4,7 @@ import "./Image.css";
 
 function ImageList({ images }) {
   const renderedImages = images.map((image) => {
+    console.log(image.urls.small_s3);
     return <ImageShow key={image.id} image={image} />;
   });
 

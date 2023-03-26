@@ -1,5 +1,6 @@
 .search-bar {
   border: 1px solid lightblue;
+  background-color: lightblue;
   border-radius: 5px;
   padding: 10px;
 }

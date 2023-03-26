@@ -16,7 +16,7 @@ function SearchBar({ onSubmit }) {
   return (
     <div className="search-bar">
       <form onSubmit={handleFormSubmit}>
-        <label> Search Images: </label>
+        <label className="label-text"> Press ENTER to search images: </label>
         {/* Confirm your search keyword is: {term.toLocaleUpperCase()} */}
         <div>
           <input value={term} onChange={handleChange} minLength={2} />
