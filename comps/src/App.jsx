@@ -1,46 +1,14 @@
 import React from "react";
-import Button from "./Button";
-import { GoBell, GoCheck } from "react-icons/go";
-import { GoCloudDownload } from "react-icons/go";
-import { FiAlertTriangle } from "react-icons/fi";
-import { AiOutlineCloseCircle } from "react-icons/ai";
+import Accordion from "./components/Accordion";
 
 function App() {
-  const handleClick = () => {
-    console.log(`button clicked`);
-  };
+  const items = [
+    { id: "sdifhiosdg", label: "here is a question1", content: "this is the answer111111111." },
+    { id: "osdglbsdgz", label: "here is a question2", content: "this is the answer222222222." },
+    { id: "sdghpihshk", label: "here is a question3", content: "this is the answer333333333." },
+  ];
 
-  return (
-    <div>
-      <div>
-        <Button primary onClick={handleClick} className="mb-5">
-          <GoBell />
-          primary
-        </Button>
-      </div>
-      <div>
-        <Button secondary rounded onClick={handleClick}>
-          <GoCloudDownload />
-          secondary
-        </Button>
-      </div>
-      <div>
-        <Button success outline rounded onClick={handleClick} className="mt-10">
-          <GoCheck /> success
-        </Button>
-      </div>
-      <div>
-        <Button warning onClick={handleClick} className="mr-10">
-          <FiAlertTriangle /> warning
-        </Button>
-      </div>
-      <div>
-        <Button danger onClick={handleClick} className="ml-10">
-          <AiOutlineCloseCircle /> danger
-        </Button>
-      </div>
-    </div>
-  );
+  return <Accordion items={items} />;
 }
 
 export default App;
