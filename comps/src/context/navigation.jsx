@@ -1,6 +1,7 @@
 import React, { createContext, useEffect, useState } from "react";
 
-const NavigationContext = createContext(null);
+// @ts-ignore
+const NavigationContext = createContext();
 
 const NavigationProvider = ({ children }) => {
   const [currentPath, setCurrentPath] = useState(window.location.pathname);
