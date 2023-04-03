@@ -9,6 +9,7 @@ function Dropdown({ options, value, onChange }) {
   useEffect(() => {
     const hanlder = (event) => {
       if (!divEl.current) return;
+      // @ts-ignore
       if (!divEl.current.contains(event.target)) setIsOpen(false);
     };
 
